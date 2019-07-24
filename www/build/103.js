@@ -1,6 +1,6 @@
 webpackJsonp([103],{
 
-/***/ 1939:
+/***/ 1940:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -13,7 +13,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_directives_module__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pipes_pipes_module__ = __webpack_require__(64);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_components_module__ = __webpack_require__(963);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__session_messages__ = __webpack_require__(2076);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__session_messages__ = __webpack_require__(2077);
 // (C) Copyright 2015 Martin Dougiamas
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -66,7 +66,7 @@ var AddonModChatSessionMessagesPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 2076:
+/***/ 2077:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -167,7 +167,7 @@ var AddonModChatSessionMessagesPage = /** @class */ (function () {
     };
     AddonModChatSessionMessagesPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-addon-mod-chat-session-messages',template:/*ion-inline-start:"/Volumes/Work1/rcj_github/moodlemobile2/src/addon/mod/chat/pages/session-messages/session-messages.html"*/'<ion-header>\n    <ion-navbar core-back-button>\n        <ion-title>{{ \'addon.mod_chat.messages\' | translate }}</ion-title>\n    </ion-navbar>\n</ion-header>\n<ion-content>\n    <ion-refresher [enabled]="loaded" (ionRefresh)="refreshMessages($event)">\n        <ion-refresher-content pullingText="{{ \'core.pulltorefresh\' | translate }}"></ion-refresher-content>\n    </ion-refresher>\n    <core-loading [hideUntil]="loaded">\n        <div *ngFor="let message of messages; index as index; last as last">\n            <div text-center *ngIf="showDate(messages[index], messages[index - 1])" class="addon-mod-chat-notice">\n                <ion-badge text-wrap color="light">\n                    <span>{{ message.timestamp * 1000 | coreFormatDate:"strftimedayshort" }}</span>\n                </ion-badge>\n            </div>\n\n            <div text-center *ngIf="message.issystem && message.message == \'enter\'" class="addon-mod-chat-notice">\n                <ion-badge text-wrap color="light">\n                    <span>{{ message.timestamp * 1000 | coreFormatDate:"strftimetime" }} {{ \'addon.mod_chat.messageenter\' | translate:{$a: message.userfullname} }}</span>\n                </ion-badge>\n            </div>\n\n            <div text-center *ngIf="message.issystem && message.message == \'exit\'" class="addon-mod-chat-notice">\n                <ion-badge text-wrap color="light">\n                    <span>{{ message.timestamp * 1000 | coreFormatDate:"strftimetime" }} {{ \'addon.mod_chat.messageexit\' | translate:{$a: message.userfullname} }}</span>\n                </ion-badge>\n            </div>\n\n            <ion-item text-wrap *ngIf="!message.issystem && message.message.substr(0, 4) != \'beep\'" class="addon-mod-chat-message">\n                <ion-avatar core-user-avatar [user]="message" item-start></ion-avatar>\n                <h2>\n                    <p float-end>{{ message.timestamp * 1000 | coreFormatDate:"strftimetime" }}</p>\n                    <core-format-text [text]="message.userfullname"></core-format-text>\n                </h2>\n                <core-format-text [text]="message.message"></core-format-text>\n            </ion-item>\n        </div>\n    </core-loading>\n</ion-content>\n'/*ion-inline-end:"/Volumes/Work1/rcj_github/moodlemobile2/src/addon/mod/chat/pages/session-messages/session-messages.html"*/,
+            selector: 'page-addon-mod-chat-session-messages',template:/*ion-inline-start:"E:\ionic\moodle\moodlemobile2\src\addon\mod\chat\pages\session-messages\session-messages.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>{{ \'addon.mod_chat.messages\' | translate }}</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n\n    <ion-refresher [enabled]="loaded" (ionRefresh)="refreshMessages($event)">\n\n        <ion-refresher-content pullingText="{{ \'core.pulltorefresh\' | translate }}"></ion-refresher-content>\n\n    </ion-refresher>\n\n    <core-loading [hideUntil]="loaded">\n\n        <div *ngFor="let message of messages; index as index; last as last">\n\n            <div text-center *ngIf="showDate(messages[index], messages[index - 1])" class="addon-mod-chat-notice">\n\n                <ion-badge text-wrap color="light">\n\n                    <span>{{ message.timestamp * 1000 | coreFormatDate:"strftimedayshort" }}</span>\n\n                </ion-badge>\n\n            </div>\n\n\n\n            <div text-center *ngIf="message.issystem && message.message == \'enter\'" class="addon-mod-chat-notice">\n\n                <ion-badge text-wrap color="light">\n\n                    <span>{{ message.timestamp * 1000 | coreFormatDate:"strftimetime" }} {{ \'addon.mod_chat.messageenter\' | translate:{$a: message.userfullname} }}</span>\n\n                </ion-badge>\n\n            </div>\n\n\n\n            <div text-center *ngIf="message.issystem && message.message == \'exit\'" class="addon-mod-chat-notice">\n\n                <ion-badge text-wrap color="light">\n\n                    <span>{{ message.timestamp * 1000 | coreFormatDate:"strftimetime" }} {{ \'addon.mod_chat.messageexit\' | translate:{$a: message.userfullname} }}</span>\n\n                </ion-badge>\n\n            </div>\n\n\n\n            <ion-item text-wrap *ngIf="!message.issystem && message.message.substr(0, 4) != \'beep\'" class="addon-mod-chat-message">\n\n                <ion-avatar core-user-avatar [user]="message" item-start></ion-avatar>\n\n                <h2>\n\n                    <p float-end>{{ message.timestamp * 1000 | coreFormatDate:"strftimetime" }}</p>\n\n                    <core-format-text [text]="message.userfullname"></core-format-text>\n\n                </h2>\n\n                <core-format-text [text]="message.message"></core-format-text>\n\n            </ion-item>\n\n        </div>\n\n    </core-loading>\n\n</ion-content>\n\n'/*ion-inline-end:"E:\ionic\moodle\moodlemobile2\src\addon\mod\chat\pages\session-messages\session-messages.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["t" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_utils_dom__["a" /* CoreDomUtilsProvider */], __WEBPACK_IMPORTED_MODULE_3__providers_chat__["a" /* AddonModChatProvider */]])
     ], AddonModChatSessionMessagesPage);

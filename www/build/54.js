@@ -97,7 +97,7 @@ var CoreSplitViewPlaceholderPage = /** @class */ (function () {
     }
     CoreSplitViewPlaceholderPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'core-placeholder',template:/*ion-inline-start:"/Volumes/Work1/rcj_github/moodlemobile2/src/components/split-view/placeholder/core-placeholder.html"*/'<ion-header>\n    <ion-navbar core-back-button>\n        <ion-title>&nbsp;</ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content>\n    <core-empty-box icon="arrow-dropleft" [message]="\'core.emptysplit\' | translate"></core-empty-box>\n</ion-content>\n'/*ion-inline-end:"/Volumes/Work1/rcj_github/moodlemobile2/src/components/split-view/placeholder/core-placeholder.html"*/,
+            selector: 'core-placeholder',template:/*ion-inline-start:"E:\ionic\moodle\moodlemobile2\src\components\split-view\placeholder\core-placeholder.html"*/'<ion-header>\n\n    <ion-navbar core-back-button>\n\n        <ion-title>&nbsp;</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n    <core-empty-box icon="arrow-dropleft" [message]="\'core.emptysplit\' | translate"></core-empty-box>\n\n</ion-content>\n\n'/*ion-inline-end:"E:\ionic\moodle\moodlemobile2\src\components\split-view\placeholder\core-placeholder.html"*/,
         }),
         __metadata("design:paramtypes", [])
     ], CoreSplitViewPlaceholderPage);

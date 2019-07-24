@@ -151,7 +151,7 @@ export class CoreMainMenuProvider {
             }
 
             return this.langProvider.getCurrentLanguage().then((currentLang) => {
-                const fallbackLang = CoreConfigConstants.default_lang || 'en';
+                const fallbackLang = CoreConfigConstants.default_lang || 'ar';
 
                 // Get the right label for each entry and add it to the result.
                 for (const id in map) {

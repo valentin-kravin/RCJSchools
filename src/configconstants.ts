@@ -23,7 +23,7 @@ export class CoreConfigConstants {
     static cache_update_frequency_often = 1200000;
     static cache_update_frequency_sometimes = 3600000;
     static cache_update_frequency_rarely = 43200000;
-    static default_lang = 'en';
+    static default_lang = 'ar';
     static languages: any = {
         'ar': 'عربي',
         'bg': 'Български',
@@ -89,6 +89,6 @@ export class CoreConfigConstants {
     static statusbarbgremotetheme = '#000000';
     static statusbarlighttextremotetheme = true;
     static enableanalytics = false;
-    static compilationtime = 1563933370676;
-    static lastcommit = '916d408f65e0cda57e8bbed3af7210caba65b102';
+    static compilationtime = 1563968026238;
+    static lastcommit = 'fa3a2d3140aafb06a4d1129fd53e029a39bb289c';
 }
