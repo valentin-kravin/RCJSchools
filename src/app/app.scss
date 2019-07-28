@@ -1000,18 +1000,15 @@ ion-app.app-root {
     white-space: normal;
   }
 
-  .alert-wrapper {
-    .alert-radio-group{
-        .alert-radio-button{
-            .button-inner{
-                .alert-radio-label{
-                    text-align: right;
-                    direction: rtl;
-                }
-            }
-        }
+  .popover-content{      
+      .list{
+          .item{
+              
+              direction: rtl;
+              
+          }
+      }
     }
-  }
 }
 
 @each $color-name, $color-base, $color-contrast in get-colors($colors) {
